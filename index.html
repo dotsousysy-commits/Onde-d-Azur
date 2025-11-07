@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Onde D'azur</title>
+  <meta name="description" content="Une ode à la couleur, un écho à la beauté." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Aller au contenu</a>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header__inner">
+      <a class="brand" href="/">
+        <img src="assets/logo.jpeg" alt="Logo Onde D'azur" width="36" height="36">
+        <span class="brand__title">Onde D'azur</span>
+      </a>
+
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav" aria-label="Ouvrir le menu">☰</button>
+
+      <nav id="nav" class="nav" aria-label="Navigation principale">
+        <ul class="nav__list">
+          <li><a href="#">Accueil</a></li>
+          <li><a href="#about">À propos</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a class="btn btn--dark" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- INTRO (au-dessus du Hero) -->
+  <section class="intro">
+    <div class="container">
+      <h1>Onde D’azur</h1>
+      <p>
+        Entre mer et lumière, Onde d’azur célèbre la rencontre entre l’art et l’émotion.
+      </p>
+      <p>
+        Chaque œuvre est une vibration, une onde qui résonne avec la douceur de la Méditerranée et l’éclat du soleil niçois.
+      </p>
+    </div>
+  </section>
+
+  <!-- HERO -->
+  <main id="main">
+    <section class="hero">
+      <div class="hero__bg">
+        <img src="assets/hero.jpg" alt="Paysage coloré" />
+        <span class="hero__overlay" aria-hidden="true"></span>
+      </div>
+
+      <div class="container hero__content">
+        <h2 class="hero__title">ONDE D’AZUR</h2>
+        <p class="hero__subtitle">Une ode à la couleur, un écho à la beauté.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__inner">
+      <p>© <span id="year"></span> Onde D'azur.</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
