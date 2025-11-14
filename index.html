@@ -1,1 +1,231 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Onde D'azur</title>
+  <meta name="description" content="Une ode à la couleur, un écho à la beauté." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Aller au contenu</a>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header__inner">
+      <a class="brand" href="/">
+        <img src="assets/logo.jpeg" alt="Logo Onde D'azur" width="36" height="36">
+        <span class="brand__title">Onde D'azur</span>
+      </a>
+
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav" aria-label="Ouvrir le menu">☰</button>
+
+      <nav id="nav" class="nav" aria-label="Navigation principale">
+        <ul class="nav__list">
+          <li><a href="#">Accueil</a></li>
+          <li><a href="#about">À propos</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a class="btn btn--dark" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- INTRO (au-dessus du Hero) -->
+  <section class="intro">
+    <div class="container">
+      <h1>Onde D’azur</h1>
+      <p>
+        Entre mer et lumière, Onde d’azur célèbre la rencontre entre l’art et l’émotion.
+      </p>
+      <p>
+        Chaque œuvre est une vibration, une onde qui résonne avec la douceur de la Méditerranée et l’éclat du soleil niçois.
+      </p>
+    </div>
+  </section>
+
+  <!-- HERO -->
+  <main id="main">
+    <section class="hero">
+      <div class="hero__bg">
+        <img src="assets/hero.jpg" alt="Paysage coloré" />
+        <span class="hero__overlay" aria-hidden="true"></span>
+      </div>
+
+      <div class="container hero__content">
+        <h2 class="hero__title">ONDE D’AZUR</h2>
+        <p class="hero__subtitle">Une ode à la couleur, un écho à la beauté.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__inner">
+      <p>© <span id="year"></span> Onde D'azur.</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
+<!-- COLLECTION D’ART -->
+<section class="collection section">
+  <div class="container">
+    <h2 class="section-title">Collection d’art</h2>
+    <p class="section-intro">
+      Découvrez une sélection d’œuvres contemporaines mêlant émotion, couleur et texture.
+    </p>
+
+    <div class="art-grid">
+      <figure class="art-item">
+        <img src="assets/art1.jpg" alt="Œuvre 1">
+        <figcaption>Un visage fissuré, fragile comme une terre craquelée.
+De ses tempes surgissent deux tournesols - symboles de lumière et de renaissance.</figcaption>
+      </figure>
+
+      <figure class="art-item">
+        <img src="assets/art2.jpg" alt="Œuvre 2">
+        <figcaption>Une figure féminine se dévoile à travers une multitude de masques.
+Les visages bleus, multiples et anonymes, entourent celle qui ose regarder.</figcaption>
+      </figure>
+
+      <figure class="art-item">
+        <img src="assets/art3.jpg" alt="Œuvre 3">
+        <figcaption>Un visage éclaté de couleurs et d'énergie. C'est une explosion de vie et de rébellion, un cri vibrant enfermé dans un cadre.</figcaption>
+      </figure>
+
+      <figure class="art-item">
+        <img src="assets/art4.jpg" alt="Œuvre 4">
+        <figcaption>formes géométriques et textures variées du visage d'une femme avec un regard pensif et une expression mélancolique.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+<!-- CRÉATIONS CONTEMPORAINES -->
+<section id="creations" class="creations section">
+  <div class="container">
+    <h2 class="section-title">Créations contemporaines</h2>
+
+    <!-- Bloc 1 : texte gauche / image droite -->
+    <article class="creation">
+      <div class="creation__text">
+        <p>
+          L’image suggère un instant suspendu : des pièces d’or en mouvement autour de mains ouvertes,
+          entre réception et dissipation. Elle évoque la flamboyance, le don, l’échange, et la tension
+          entre ce qui retient et ce qui laisse partir.
+        </p>
+      </div>
+      <figure class="creation__media">
+        <img src="assets/creation1.jpg" alt="Mains ouvertes avec pièces dorées en mouvement">
+      </figure>
+    </article>
+
+    <!-- Bloc 2 : image gauche / texte droite -->
+    <article class="creation creation--flip">
+      <figure class="creation__media">
+        <img src="assets/creation2.jpg" alt="Reflet d’un visage dans une eau ondulée">
+      </figure>
+      <div class="creation__text">
+        <p>
+          La surface de l’eau déforme le visage en ondes subtiles. Les teintes vives et les contours flous
+          ajoutent une touche d’abstraction et de mystère, entre apparition et effacement.
+        </p>
+      </div>
+    </article>
+
+    <!-- (Optionnel) Bloc 3 si ta maquette en prévoit un -->
+    <!--
+    <article class="creation">
+      <div class="creation__text">
+        <p>Ton troisième texte ici…</p>
+      </div>
+      <figure class="creation__media">
+        <img src="assets/creation3.jpg" alt="Troisième création contemporaine">
+      </figure>
+    </article>
+    -->
+  </div>
+</section>
+<!-- ARTISTES -->
+<section id="artistes" class="artists section">
+  <div class="container">
+    <h2 class="section-title">Artistes</h2>
+
+    <ul class="artists-grid">
+      <li class="artist-card">
+        <figure>
+          <img src="assets/artist1.jpg" alt="Portrait de Léna Duvall">
+          <figcaption>Léna Duvall</figcaption>
+        </figure>
+      </li>
+
+      <li class="artist-card">
+        <figure>
+          <img src="assets/artist2.jpg" alt="Portrait de Milo Varela">
+          <figcaption>Milo Varela</figcaption>
+        </figure>
+      </li>
+
+      <li class="artist-card">
+        <figure>
+          <img src="assets/artist3.jpg" alt="Portrait d’Ariane Rochefort">
+          <figcaption>Ariane Rochefort</figcaption>
+        </figure>
+      </li>
+
+      <li class="artist-card">
+        <figure>
+          <img src="assets/artist4.jpg" alt="Portrait d’Elias Blackwood">
+          <figcaption>Elias Blackwood</figcaption>
+        </figure>
+      </li>
+
+      <li class="artist-card">
+        <figure>
+          <img src="assets/artist5.jpg" alt="Portrait de Sienna Lark">
+          <figcaption>Sienna Lark</figcaption>
+        </figure>
+      </li>
+    </ul>
+  </div>
+</section>
+<!-- BANNIÈRE FINALE (citation) -->
+<section class="quote-banner">
+  <div class="quote-banner__bg">
+    <img src="assets/banner.jpg" alt="" aria-hidden="true">
+    <span class="quote-banner__overlay" aria-hidden="true"></span>
+  </div>
+  <div class="container quote-banner__content">
+    <p class="quote">« Onde d’azur — une ode à la couleur, un écho à la beauté. »</p>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact section">
+  <div class="container contact__grid">
+    <div class="contact__infos">
+      <h2 class="section-title">Contact</h2>
+      <p>Pour toute demande (exposition, collaboration, presse) :</p>
+      <ul class="contact-list">
+        <li><strong>Email :</strong> contact@ondedazur.com</li>
+        <li><strong>Téléphone :</strong> +33 6 12 34 56 78</li>
+        <li><strong>Adresse :</strong> 15 rue des Arts, 06000 Nice</li>
+      </ul>
+    </div>
+
+    <form class="contact-form" action="#" method="post" novalidate>
+      <label>Votre nom
+        <input type="text" name="name" required>
+      </label>
+      <label>Votre email
+        <input type="email" name="email" required>
+      </label>
+      <label>Message
+        <textarea name="message" rows="5" required></textarea>
+      </label>
+      <button class="btn btn--dark" type="submit">Envoyer</button>
+    </form>
+  </div>
+</section>
+
 
